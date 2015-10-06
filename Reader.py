@@ -17,7 +17,6 @@ class ConstMixin(object):
 
     def __init__(self):
         self.tool = pyocr.get_available_tools()[0]
-
         self.special_chars = "{}[]!\"§$%&/()\n\\.,-~\' "
         self.colors = {'0': '#ffffff',
                        '31': '#cd0000',
