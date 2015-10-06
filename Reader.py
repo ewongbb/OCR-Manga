@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-import tkinter as tk
+import sys
+if sys.version_info[0] == 2:
+    # Python2 uses Tkinter
+    import Tkinter as tk
+else:
+    # Python3 uses tkinter
+    import tkinter as tk
+
 from PIL import Image, ImageTk
 import os
 import pyocr
